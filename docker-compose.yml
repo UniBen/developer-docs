@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  app:
+    ports:
+      - "8080-8090:8080"
+    build:
+      context: .
+    volumes:
+      - ./:/app
+    entrypoint: npm run dev
